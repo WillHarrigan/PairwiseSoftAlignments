@@ -16,7 +16,7 @@ compute similarity.
 
 ## Input
 ```sh
-python sa_interface.py ./protein_sequence_data/test_protein_sequences.fasta ./alignment_output.tsv
+python ./sa_interface.py ./protein_sequence_data/test_protein_sequences.fasta ./alignment_output.tsv
 ```
 
 ### Fasta File
