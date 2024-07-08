@@ -8,10 +8,10 @@ algorithm as presented in the paper "Large Language Models, Protein
 Homology, Viruses, Alignments" by Harrigan et al. The primary purpose of this repository is to enable 
 a single step process to easily evaluate the similarity of protein sequences in a fasta file.
 
-This repository contains a single Python script scripts, `sa_interface.py`
+This repository contains a single Python script, `sa_interface.py`
 which implements soft-alignment functions to compute protein sequence similarity. The script computes the similarity between every pairwise combination of 
-protein sequences in the input fasta file. During each pairwise comparison the script generates ESM-2 (33 dimesion, 650M parameter) embeddings for each protein sequence and then uses soft-alignment functions to 
-compute similarity between seqeucnes. 
+protein sequences in the input fasta file. During each pairwise comparison the script generates ESM-2 (33 dimesion, 650M parameter) embeddings for the protein sequences and then uses soft-alignment functions to 
+compute similarity. 
 
 
 ## Input
@@ -75,7 +75,7 @@ For example:
 python path/to/script/sa_interface.py path/to/fasta/fasta_sequences.fasta path/to/output/output_file.tsv
 ```
 
-## Acknowledgments
+## Links
 
 - [Biopython](https://biopython.org/)
 - [PyTorch](https://pytorch.org/)
