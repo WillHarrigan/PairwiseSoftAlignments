@@ -6,17 +6,18 @@
 This repository hosts the implementation of pairwise comparisons utilizing the soft alignment
 algorithm as presented in the paper "Large Language Models, Protein
 Homology, Viruses, Alignments" by Harrigan et al. The primary purpose of this repository is to enable 
-a single step process to easily go from 
+a single step process to easily evaluate the similarity of protein sequences in a fasta file.
 
-This repository contains various scripts, including the `soft_align.py`
-script implements the core functions of the soft alignment
-algorithm. This file is essential for anyone looking to directly apply
-or further explore the algorithmic approach detailed in the paper.
-
-In addition to the `soft_align.py` script, this repository offers two Jupyter notebooks that serve as comprehensive guides to using soft alignment.
+This repository contains a single Python script scripts, `sa_interface.py`
+which implements soft-alignment functions to compute protein sequence similarity. The script computes the similarity between every pairwise combination of 
+protein sequences in the input fasta file. During each pairwise comparison the script generates ESM-2 (33 dimesion, 650M parameter) embeddings for each protein sequence and then uses soft-alignment functions to 
+compute similarity between seqeucnes. 
 
 
 ## Input
+```sh
+python ./sa_interface.py ./protein_sequence_data/test_protein_sequences.fasta ./alignment_output.tsv
+```
 
 ### Fasta File
 
@@ -37,7 +38,7 @@ The script outputs a .tsv file at the specified path. The file contains the foll
 
 - **Score**: Soft-align score
 - **RelativeScore**: Relative score
-- **SimScore**: Similarity score (Relative score/minimum sequence length)
+- **SimScore**: Percent Similarity score (Relative score/minimum sequence length)
 - **QueryID**: Query sequence ID
 - **HitID**: Hit sequence ID
 - **QueryLength**: Length of the query sequence
