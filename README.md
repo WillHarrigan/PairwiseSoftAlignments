@@ -1,18 +1,20 @@
 
-# Pairwise Soft-Alignment Script
+# Pairwise Soft-Alignments of Protein Sequences 
 
-This Python script runs pairwise soft-alignments on an input FASTA file and outputs a .tsv file containing the soft-align score, relative score, similarity, and sequence length.
+### About This Repository
 
-## Required Libraries
+This repository hosts the implementation of pairwise comparisons utilizing the soft alignment
+algorithm as presented in the paper "Large Language Models, Protein
+Homology, Viruses, Alignments" by Harrigan et al. The primary purpose of this repository is to enable 
+a single step process to easily go from 
 
-To run the script, you'll need to install the following libraries:
+This repository contains various scripts, including the `soft_align.py`
+script implements the core functions of the soft alignment
+algorithm. This file is essential for anyone looking to directly apply
+or further explore the algorithmic approach detailed in the paper.
 
-```sh
-pip install Bio
-pip install torch
-pip install fair-esm
-pip install scikit-learn
-```
+In addition to the `soft_align.py` script, this repository offers two Jupyter notebooks that serve as comprehensive guides to using soft alignment.
+
 
 ## Input
 
@@ -50,6 +52,17 @@ Score   RelativeScore   SimScore    QueryID HitID   QueryLength HitLength
 270     253.3522186279297 0.91      seq_2   seq_3   279         296
 ```
 
+## Required Libraries
+
+To run the script, you'll need to install the following libraries:
+
+```sh
+pip install Bio
+pip install torch
+pip install fair-esm
+pip install scikit-learn
+```
+
 ## Usage
 
 1. Install the required libraries.
@@ -60,10 +73,6 @@ For example:
 ```sh
 python path/to/script/sa_interface.py path/to/fasta/fasta_sequences.fasta path/to/output/output_file.tsv
 ```
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
