@@ -34,7 +34,7 @@ The script outputs a .tsv file at the specified path. The file contains the foll
 
 - **Score**: Soft-align score
 - **RelativeScore**: Relative score
-- **SimScore**: Similarity score
+- **SimScore**: Similarity score (Relative score/minimum sequence length)
 - **QueryID**: Query sequence ID
 - **HitID**: Hit sequence ID
 - **QueryLength**: Length of the query sequence
