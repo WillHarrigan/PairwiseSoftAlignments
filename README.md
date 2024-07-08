@@ -75,7 +75,7 @@ For example:
 python path/to/script/sa_interface.py path/to/fasta/fasta_sequences.fasta path/to/output/output_file.tsv
 ```
 
-## Links
+## Links to Libraries
 
 - [Biopython](https://biopython.org/)
 - [PyTorch](https://pytorch.org/)
