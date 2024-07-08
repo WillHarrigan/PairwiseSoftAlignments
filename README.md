@@ -44,7 +44,7 @@ The script outputs a .tsv file at the specified path. The file contains the foll
 - **QueryLength**: Length of the query sequence
 - **HitLength**: Length of the hit sequence
 
-### Example Output
+### Example Output (.tsv)
 
 ```plaintext
 Score   RelativeScore   SimScore    QueryID HitID   QueryLength HitLength
