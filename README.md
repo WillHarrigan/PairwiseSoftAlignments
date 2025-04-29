@@ -4,8 +4,7 @@
 ### About This Repository
 
 This repository hosts the implementation of pairwise comparisons utilizing the soft alignment
-algorithm as presented in the paper "Large Language Models, Protein
-Homology, Viruses, Alignments" by Harrigan et al. The primary purpose of this repository is to enable 
+algorithm as presented in the paper "Improvements in viral gene annotation using large language models and soft alignments" by Harrigan et al. The primary purpose of this repository is to enable 
 a single step process to easily evaluate the similarity of protein sequences in a fasta file.
 
 This repository contains a single Python script, `sa_interface.py`
